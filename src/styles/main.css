@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "../tailwind-plugin/tw-theme";
+@plugin "../tailwind-plugin/tw-bs-grid";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+/* Beaver Punch Font */
+@font-face {
+  font-family: 'Beaver Punch';
+  src: url('/fonts/BeaverPunch.woff2') format('woff2'),
+       url('/fonts/BeaverPunch.woff') format('woff'),
+       url('/fonts/BeaverPunch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "./safe.css";
+@import "./utilities.css";
+
+@layer base {
+  @import "./base.css";
+}
+
+@layer components {
+  @import "./components.css";
+  @import "./navigation.css";
+  @import "./buttons.css";
+  @import "./animations.css";
+}
+
+@theme {
+  --breakpoint-sm: 540px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1384px;
+
+  --shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}

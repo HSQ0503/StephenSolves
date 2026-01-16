@@ -1,0 +1,97 @@
+{
+  "main": [
+    {
+      "name": "All Pages",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Services",
+          "url": "/features"
+        },
+        {
+          "name": "Pricing",
+          "url": "/pricing"
+        },
+        {
+          "name": "Reviews",
+          "url": "/reviews"
+        },
+        {
+          "name": "Contact",
+          "url": "/contact"
+        },
+        {
+          "name": "Blog",
+          "url": "/blog"
+        },
+        {
+          "name": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "name": "Terms & Conditions",
+          "url": "/terms"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "url": "/features"
+    },
+    {
+      "name": "Reviews",
+      "url": "/reviews"
+    },
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    }
+  ],
+  "footer_column_1": [
+    {
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "name": "Services",
+      "url": "/features"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    }
+  ],
+  "footer_column_2": [
+    {
+      "name": "Student Reviews",
+      "url": "/reviews"
+    },
+    {
+      "name": "Services",
+      "url": "/features"
+    },
+    {
+      "name": "Terms & Conditions",
+      "url": "/terms"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
+    }
+  ],
+  "footer_bottom_links": [
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
+    }
+  ]
+}

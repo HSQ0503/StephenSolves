@@ -1,0 +1,90 @@
+html {
+  @apply text-base-sm md:text-base;
+}
+
+body {
+  @apply bg-body text-base  font-primary font-normal leading-relaxed text-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-primary font-bold leading-tight text-text-dark;
+}
+
+/* Beaver Punch outline heading style */
+.heading-outline {
+  font-family: 'Beaver Punch', sans-serif;
+  color: white;
+  -webkit-text-stroke: 2px #6b7c8a;
+  text-stroke: 2px #6b7c8a;
+  paint-order: stroke fill;
+  text-shadow:
+    3px 3px 0 rgba(107, 124, 138, 0.3),
+    -1px -1px 0 rgba(107, 124, 138, 0.1);
+  letter-spacing: 0.02em;
+}
+
+/* Apply to main section headings */
+.section-title,
+.banner-title {
+  font-family: 'Beaver Punch', sans-serif;
+  color: white;
+  -webkit-text-stroke: 2px #6b7c8a;
+  text-stroke: 2px #6b7c8a;
+  paint-order: stroke fill;
+  text-shadow:
+    3px 3px 0 rgba(107, 124, 138, 0.3),
+    -1px -1px 0 rgba(107, 124, 138, 0.1);
+  letter-spacing: 0.02em;
+}
+
+h1,
+.h1 {
+  @apply text-h1-sm md:text-h1;
+}
+
+h2,
+.h2 {
+  @apply text-h2-sm md:text-h2;
+}
+
+h3,
+.h3 {
+  @apply text-h3-sm md:text-h3;
+}
+
+h4,
+.h4 {
+  @apply text-h4;
+}
+
+h5,
+.h5 {
+  @apply text-h5;
+}
+
+h6,
+.h6 {
+  @apply text-h6;
+}
+
+b,
+strong {
+  @apply font-semibold;
+}
+
+code {
+  @apply after:border-none;
+}
+
+blockquote > p {
+  @apply my-0!;
+}
+
+button {
+  @apply cursor-pointer;
+}

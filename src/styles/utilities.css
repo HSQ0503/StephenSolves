@@ -1,0 +1,16 @@
+/* form style */
+@utility form-input {
+  @apply w-full rounded border-[2px] px-6 py-4 focus:ring-transparent;
+  background-color: white;
+  color: #161525;
+  border-color: #5a9bc4;
+
+  &::placeholder {
+    color: rgba(22, 21, 37, 0.4);
+  }
+}
+
+@utility form-label {
+  @apply mb-3 block font-primary text-base font-medium;
+  color: white;
+}

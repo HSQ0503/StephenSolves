@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "StephenSolves",
+    "base_url": "https://stephensolves.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "120",
+    "logo_height": "41",
+    "logo_text": "StephenSolves"
+  },
+
+  "settings": {
+    "sticky_header": true,
+    "default_theme": "system",
+    "pagination": 6,
+    "summary_length": 180,
+    "blog_folder": "blog"
+  },
+
+  "notification_bar": {
+    "enable": true,
+    "text": "📚 Expert Math Tutoring from High School to Graduate Level | M.S. Mathematics, The Citadel ⭐⭐⭐⭐⭐"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "copyright": "© Copyright {year}, StephenSolves. All Rights Reserved.",
+    "footer_newsletter_consent": "By clicking the button you consent to receiving <br /> updates about tutoring sessions",
+    "footer_text": "Expert Math Tutoring"
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Book a Session",
+    "link": "/contact"
+  },
+
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+
+  "metadata": {
+    "meta_author": "Stephen Schools",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "StephenSolves - Expert math tutoring from high school algebra to graduate-level mathematics. Taught by Stephen Schools, M.S. Mathematics from The Citadel."
+  }
+}
