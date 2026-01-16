@@ -44,7 +44,7 @@ export default function ContactPageComponent() {
                       Email Address *
                     </label>
                     <input
-                      type="text"
+                      type="email"
                       id="email"
                       name="email"
                       className="form-input"
@@ -54,33 +54,102 @@ export default function ContactPageComponent() {
                     />
                   </div>
 
-                  <div className="col-span-2">
-                    <label htmlFor="subject" className="form-label">
-                      Subject *
+                  <div className="col-span-2 sm:col-span-1">
+                    <label htmlFor="phone" className="form-label">
+                      Phone Number
                     </label>
                     <input
-                      type="text"
-                      id="subject"
-                      name="subject"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      className="form-input"
+                      placeholder="(Optional) For scheduling"
+                    />
+                  </div>
+
+                  <div className="col-span-2 sm:col-span-1">
+                    <label htmlFor="education_level" className="form-label">
+                      Current Education Level *
+                    </label>
+                    <select
+                      id="education_level"
+                      name="education_level"
                       className="form-input"
                       required
                       aria-required="true"
-                      placeholder="Write Your Subject Here"
+                    >
+                      <option value="">Select your level</option>
+                      <option value="high_school">High School</option>
+                      <option value="undergraduate">Undergraduate</option>
+                      <option value="graduate">Graduate</option>
+                      <option value="other">Other / Professional</option>
+                    </select>
+                  </div>
+
+                  <div className="col-span-2">
+                    <label htmlFor="math_subject" className="form-label">
+                      Math Subject / Course *
+                    </label>
+                    <input
+                      type="text"
+                      id="math_subject"
+                      name="math_subject"
+                      className="form-input"
+                      required
+                      aria-required="true"
+                      placeholder="e.g., Calculus II, Linear Algebra, Statistics"
                     />
+                  </div>
+
+                  <div className="col-span-2 sm:col-span-1">
+                    <label htmlFor="goal" className="form-label">
+                      Primary Goal *
+                    </label>
+                    <select
+                      id="goal"
+                      name="goal"
+                      className="form-input"
+                      required
+                      aria-required="true"
+                    >
+                      <option value="">What do you need help with?</option>
+                      <option value="improve_grades">Improve Grades</option>
+                      <option value="exam_prep">Exam Preparation (SAT, GRE, etc.)</option>
+                      <option value="homework_help">Homework Help</option>
+                      <option value="concept_understanding">Understand Concepts Better</option>
+                      <option value="get_ahead">Get Ahead in Class</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div className="col-span-2 sm:col-span-1">
+                    <label htmlFor="session_format" className="form-label">
+                      Preferred Session Format *
+                    </label>
+                    <select
+                      id="session_format"
+                      name="session_format"
+                      className="form-input"
+                      required
+                      aria-required="true"
+                    >
+                      <option value="">Select format</option>
+                      <option value="online">Online (Video Call)</option>
+                      <option value="in_person">In-Person</option>
+                      <option value="either">Either Works</option>
+                    </select>
                   </div>
 
                   <div className="col-span-2">
                     <label htmlFor="message" className="form-label">
-                      Write Message *
+                      Additional Details
                     </label>
                     <textarea
                       id="message"
                       name="message"
-                      rows={3}
+                      rows={4}
                       className="form-input h-auto"
-                      required
-                      aria-required="true"
-                      placeholder="Write Your Message Here"
+                      placeholder="Tell me more about your situation - current challenges, upcoming exams, schedule preferences, or anything else that would help me understand your needs."
                     ></textarea>
                   </div>
                 </div>
@@ -89,7 +158,7 @@ export default function ContactPageComponent() {
                     type="submit"
                     className="btn btn-primary py-4 px-7 text-light leading-none w-full"
                   >
-                    Send Message
+                    Request Consultation
                   </button>
                 </div>
               </form>

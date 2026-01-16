@@ -28,7 +28,7 @@ features:
   - title: Flexible Online and In-Person Sessions
     badge: CONVENIENCE
     subtitle: "Choose the format that works best for you. I offer both virtual sessions via video call and in-person tutoring, with scheduling options to fit your busy academic life."
-    image: "/images/features/feature-5.png"
+    image: "/images/features/feature-6.png"
     button:
       enable: true
       label: Get Started Today

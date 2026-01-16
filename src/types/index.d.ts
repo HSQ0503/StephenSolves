@@ -124,6 +124,7 @@ export interface FeatureCarousel {
       subtitle: string;
       icon: string;
       image: string;
+      link?: string;
     }>;
   };
   slug?: string;

@@ -5,6 +5,7 @@ import SineCosineGraph from "@/components/SineCosineGraph";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { FeatureCarousel } from "@/types";
 import { useState } from "react";
+import Link from "next/link";
 
 const FeatureCarousel = ({ data }: { data: FeatureCarousel }) => {
   const { title, subtitle, list, enable } = data.frontmatter;
