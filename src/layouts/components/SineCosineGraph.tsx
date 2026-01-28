@@ -2,8 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-type GraphType = "algebra" | "calculus" | "series" | "linear" | "graduate";
-
 interface SineCosineGraphProps {
   activeGraph?: number;
 }
@@ -11,13 +9,6 @@ interface SineCosineGraphProps {
 const SineCosineGraph = ({ activeGraph = 0 }: SineCosineGraphProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number>(0);
-  const phaseRef = useRef<number>(0);
-  const targetPhaseRef = useRef<number>(0);
-
-  useEffect(() => {
-    // Update target phase when activeGraph changes
-    targetPhaseRef.current = activeGraph * Math.PI * 0.5;
-  }, [activeGraph]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -40,54 +31,84 @@ const SineCosineGraph = ({ activeGraph = 0 }: SineCosineGraphProps) => {
 
     const graphConfigs = [
       {
+        title: "Linear & Quadratic",
+        subtitle: "y = x and y = x²",
+        color1: "#ffffff",
+        color2: "#ffd700",
+        func1: (x: number) => x / 3,
+        func2: (x: number) => Math.pow(x / 2, 2) / 3,
+        label1: "y = x",
+        label2: "y = x²"
+      },
+      {
+        title: "Circle Equation",
+        subtitle: "x² + y² = r²",
+        color1: "#ffffff",
+        color2: "#90EE90",
+        func1: (x: number) => Math.sqrt(Math.max(0, 4 - Math.pow(x, 2))),
+        func2: (x: number) => -Math.sqrt(Math.max(0, 4 - Math.pow(x, 2))),
+        label1: "upper half",
+        label2: "lower half"
+      },
+      {
         title: "Trigonometric Functions",
         subtitle: "y = sin(x) and y = cos(x)",
         color1: "#ffffff",
-        color2: "#ffd700",
-        func1: (x: number, phase: number) => Math.sin(x + phase),
-        func2: (x: number, phase: number) => Math.cos(x + phase),
+        color2: "#ff6b6b",
+        func1: (x: number) => Math.sin(x),
+        func2: (x: number) => Math.cos(x),
         label1: "sin(x)",
         label2: "cos(x)"
       },
       {
-        title: "Derivatives",
-        subtitle: "f(x) = x² and f'(x) = 2x",
-        color1: "#ffffff",
-        color2: "#90EE90",
-        func1: (x: number, phase: number) => Math.pow(x / 2, 2) / 3,
-        func2: (x: number, phase: number) => (x / 2) / 1.5,
-        label1: "f(x) = x²",
-        label2: "f'(x) = 2x"
-      },
-      {
-        title: "Taylor Series",
-        subtitle: "sin(x) approximation",
-        color1: "#ffffff",
-        color2: "#ff6b6b",
-        func1: (x: number, phase: number) => Math.sin(x),
-        func2: (x: number, phase: number) => x - Math.pow(x, 3) / 6 + Math.pow(x, 5) / 120,
-        label1: "sin(x)",
-        label2: "Taylor approx"
-      },
-      {
-        title: "Parametric Curves",
-        subtitle: "Lissajous Figure",
+        title: "Function Transformations",
+        subtitle: "f(x) and f(x - 1) + 2",
         color1: "#ffffff",
         color2: "#da70d6",
-        func1: (x: number, phase: number) => Math.sin(x * 2 + phase),
-        func2: (x: number, phase: number) => Math.sin(x * 3),
-        label1: "x = sin(2t)",
-        label2: "y = sin(3t)"
+        func1: (x: number) => Math.pow(x / 2, 2) / 3,
+        func2: (x: number) => Math.pow((x - 1) / 2, 2) / 3 + 0.7,
+        label1: "f(x) = x²",
+        label2: "shifted"
       },
       {
-        title: "Fourier Analysis",
-        subtitle: "Wave Superposition",
+        title: "Normal Distribution",
+        subtitle: "Bell Curve",
         color1: "#ffffff",
         color2: "#00bfff",
-        func1: (x: number, phase: number) => Math.sin(x) + Math.sin(2 * x) / 2 + Math.sin(3 * x) / 3,
-        func2: (x: number, phase: number) => Math.sin(x),
-        label1: "Σ sin(nx)/n",
-        label2: "sin(x)"
+        func1: (x: number) => Math.exp(-Math.pow(x, 2) / 2) * 2,
+        func2: (x: number) => Math.exp(-Math.pow(x - 1, 2) / 1) * 1.5,
+        label1: "μ = 0",
+        label2: "μ = 1"
+      },
+      {
+        title: "Derivatives",
+        subtitle: "f(x) = x³ and f'(x) = 3x²",
+        color1: "#ffffff",
+        color2: "#ffa500",
+        func1: (x: number) => Math.pow(x / 2, 3) / 2,
+        func2: (x: number) => 3 * Math.pow(x / 2, 2) / 4,
+        label1: "f(x) = x³",
+        label2: "f'(x) = 3x²"
+      },
+      {
+        title: "Exponential Growth",
+        subtitle: "Modeling Applications",
+        color1: "#ffffff",
+        color2: "#32cd32",
+        func1: (x: number) => Math.exp(x / 3) / 3 - 0.3,
+        func2: (x: number) => Math.log(Math.max(0.1, x + 3)) / 2,
+        label1: "eˣ",
+        label2: "ln(x)"
+      },
+      {
+        title: "Limits & Continuity",
+        subtitle: "Analysis Foundations",
+        color1: "#ffffff",
+        color2: "#ff69b4",
+        func1: (x: number) => Math.sin(x) / (x === 0 ? 0.001 : x) * 1.5,
+        func2: (x: number) => 1.5,
+        label1: "sin(x)/x",
+        label2: "limit = 1"
       }
     ];
 
@@ -99,10 +120,6 @@ const SineCosineGraph = ({ activeGraph = 0 }: SineCosineGraphProps) => {
       const centerY = height / 2;
       const centerX = width / 2;
       const amplitude = height * 0.25;
-
-      // Smooth transition to target phase
-      const phaseDiff = targetPhaseRef.current - phaseRef.current;
-      phaseRef.current += phaseDiff * 0.08;
 
       const config = graphConfigs[activeGraph % graphConfigs.length];
 
@@ -239,7 +256,7 @@ const SineCosineGraph = ({ activeGraph = 0 }: SineCosineGraphProps) => {
 
       for (let px = 40; px < width - 30; px++) {
         const x = (px - centerX) / 50 * Math.PI;
-        const y = centerY - config.func2(x, phaseRef.current) * amplitude;
+        const y = centerY - config.func2(x) * amplitude;
         if (px === 40) {
           ctx.moveTo(px, y);
         } else {
@@ -258,7 +275,7 @@ const SineCosineGraph = ({ activeGraph = 0 }: SineCosineGraphProps) => {
 
       for (let px = 40; px < width - 30; px++) {
         const x = (px - centerX) / 50 * Math.PI;
-        const y = centerY - config.func1(x, phaseRef.current) * amplitude;
+        const y = centerY - config.func1(x) * amplitude;
         if (px === 40) {
           ctx.moveTo(px, y);
         } else {

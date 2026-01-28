@@ -8,11 +8,11 @@ list:
   - title: Flexible Scheduling
     subtitle: "Book sessions that fit your schedule, including evenings and weekends."
     icon: "CiRepeat"
-  - title: All Math Levels
-    subtitle: "From high school algebra to graduate-level analysis and beyond."
+  - title: All High School Math
+    subtitle: "From Algebra I through AP Calculus and IB Mathematics."
     icon: "CiGps"
   - title: Test Preparation
-    subtitle: "SAT, ACT, GRE, AP exams, and university placement tests."
+    subtitle: "AP Statistics, AP Calculus AB/BC, and IB Math exams."
     icon: "CiMoneyBill"
   - title: Progress Tracking
     subtitle: "Regular assessments and feedback to measure your improvement."

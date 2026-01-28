@@ -1,9 +1,9 @@
 ---
 enable: true
 features:
-  - title: From Algebra to Advanced Calculus and Beyond
+  - title: From Algebra to AP and IB Mathematics
     badge: ALL LEVELS
-    subtitle: "Whether you're struggling with high school algebra or tackling graduate-level real analysis, I provide personalized instruction tailored to your learning style and goals."
+    subtitle: "Whether you're building foundations in Algebra I or preparing for AP Calculus and IB Math exams, I provide personalized instruction tailored to your learning style and goals."
     image: "/images/features/feature-3.png"
     button:
       enable: true

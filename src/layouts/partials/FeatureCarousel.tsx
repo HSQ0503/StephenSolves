@@ -45,7 +45,7 @@ const FeatureCarousel = ({ data }: { data: FeatureCarousel }) => {
               data-aos="fade-up-sm"
               data-aos-delay="150"
             >
-              <div className="lg:w-[45%] xl:w-[30%] flex flex-col bg-white">
+              <div className="lg:w-[45%] xl:w-[30%] flex flex-col bg-white lg:max-h-[600px] lg:overflow-y-auto">
                 {list.map((item, index) => (
                   <div
                     key={index}

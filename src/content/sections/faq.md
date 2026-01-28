@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions"
 list:
   - question: "What math subjects do you tutor?"
-    answer: "I tutor all levels of mathematics from high school through graduate school, including Algebra, Geometry, Trigonometry, Pre-Calculus, Calculus I-III, Linear Algebra, Differential Equations, Discrete Mathematics, Real Analysis, Abstract Algebra, Topology, and Statistics."
+    answer: "I tutor high school mathematics including Algebra I, II, and College Algebra, Geometry, Trigonometry, and Precalculus. I also specialize in AP Statistics, AP Calculus AB and BC, and IB Mathematics (both Applications & Interpretation and Analysis & Approaches at SL and HL levels)."
   - question: "Do you offer online tutoring sessions?"
     answer: "Yes, I offer both online and in-person tutoring sessions. Online sessions are conducted via video call with screen sharing and digital whiteboard tools for effective remote learning."
   - question: "What are your qualifications?"
