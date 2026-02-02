@@ -26,10 +26,6 @@
           "url": "/contact"
         },
         {
-          "name": "Blog",
-          "url": "/blog"
-        },
-        {
           "name": "Privacy Policy",
           "url": "/privacy-policy"
         },
@@ -66,8 +62,8 @@
       "url": "/contact"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Reviews",
+      "url": "/reviews"
     }
   ],
   "footer_column_2": [

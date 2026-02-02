@@ -22,7 +22,6 @@ StephenSolves is the professional website for Stephen Schools, a math tutor with
 
 - Responsive design with dark mode support
 - Contact form with email notifications via Resend
-- Blog with Markdown/MDX support
 - Student reviews section
 - Pricing tiers display
 - SEO optimized with meta tags and sitemap
@@ -76,7 +75,6 @@ StephenSolves is the professional website for Stephen Schools, a math tutor with
 src/
 ├── app/                    # Next.js App Router pages
 │   ├── api/contact/        # Contact form API route
-│   ├── blog/               # Blog pages
 │   ├── contact/            # Contact page + success page
 │   ├── features/           # Services page
 │   ├── pricing/            # Pricing page
@@ -87,7 +85,6 @@ src/
 │   ├── social.json         # Social links
 │   └── theme.json          # Colors & fonts
 ├── content/                # Markdown content
-│   ├── blog/               # Blog posts
 │   ├── pages/              # Static pages
 │   └── sections/           # Homepage sections
 ├── layouts/
@@ -117,27 +114,6 @@ Edit `src/config/menu.json` to update navigation links.
 ### Theme
 
 Edit `src/config/theme.json` to customize colors and fonts.
-
-## Content Management
-
-### Blog Posts
-
-Add Markdown files to `src/content/blog/` with frontmatter:
-
-```yaml
----
-title: "Post Title"
-date: "2025-01-01"
-image: "/images/blog/image.png"
-draft: false
----
-
-Your content here...
-```
-
-### Pages
-
-Add Markdown files to `src/content/pages/` for static pages.
 
 ## Environment Variables
 
