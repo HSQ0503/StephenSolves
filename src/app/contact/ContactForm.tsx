@@ -144,24 +144,7 @@ export default function ContactForm() {
           </select>
         </div>
 
-        <div className="col-span-2 sm:col-span-1">
-          <label htmlFor="session_format" className="form-label">
-            Preferred Session Format *
-          </label>
-          <select
-            id="session_format"
-            name="session_format"
-            className="form-input"
-            required
-            aria-required="true"
-            disabled={isSubmitting}
-          >
-            <option value="">Select format</option>
-            <option value="online">Online (Video Call)</option>
-            <option value="in_person">In-Person</option>
-            <option value="either">Either Works</option>
-          </select>
-        </div>
+        <input type="hidden" name="session_format" value="online" />
 
         <div className="col-span-2">
           <label htmlFor="message" className="form-label">

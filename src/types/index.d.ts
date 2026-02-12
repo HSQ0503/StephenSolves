@@ -196,24 +196,12 @@ export interface Pricing {
   frontmatter: {
     title: string;
     subtitle: string;
-    plans_labels: string[];
-    plans: Array<{
-      title: string;
-      description: string;
-      price_prefix: string;
-      features: string[];
-      price: {
-        yearly: {
-          amount: number;
-          period: string;
-        };
-        monthly: {
-          amount: number;
-          period: string;
-        };
-      };
-      button: Button;
-    }>;
+    rate: number;
+    rate_period: string;
+    rate_prefix: string;
+    features: string[];
+    multi_session_note: string;
+    button: Button;
   };
   slug?: string;
   content?: string;

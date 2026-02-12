@@ -4,7 +4,7 @@ list:
   - question: "What math subjects do you tutor?"
     answer: "I tutor high school mathematics including Algebra I, II, and College Algebra, Geometry, Trigonometry, and Precalculus. I also specialize in AP Statistics, AP Calculus AB and BC, and IB Mathematics (both Applications & Interpretation and Analysis & Approaches at SL and HL levels)."
   - question: "Do you offer online tutoring sessions?"
-    answer: "Yes, I offer both online and in-person tutoring sessions. Online sessions are conducted via video call with screen sharing and digital whiteboard tools for effective remote learning."
+    answer: "Yes! All sessions are conducted online via video call with screen sharing and digital whiteboard tools for effective remote learning."
   - question: "What are your qualifications?"
     answer: "I hold a Master's degree in Mathematics from The Citadel and a Bachelor's degree in Mathematics from UNC Chapel Hill. I have years of experience tutoring students at all levels and helping them achieve their academic goals."
   - question: "How do I schedule a session?"

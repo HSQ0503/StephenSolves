@@ -17,8 +17,8 @@ list:
   - title: Progress Tracking
     subtitle: "Regular assessments and feedback to measure your improvement."
     icon: "CiBellOn"
-  - title: Online or In-Person
-    subtitle: "Choose virtual sessions or face-to-face tutoring."
+  - title: 100% Online
+    subtitle: "Convenient virtual sessions from anywhere via video call."
     icon: "CiViewTimeline"
 
 subtitle: "With a Master's from The Citadel and B.A. from UNC Chapel Hill in Mathematics, I bring expertise and passion to every tutoring session."

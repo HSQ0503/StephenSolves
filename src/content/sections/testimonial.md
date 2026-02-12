@@ -51,5 +51,5 @@ testimonials:
     content: "Stephen's patience with my never-ending questions about proofs made all the difference in my discrete math course."
   - name: "Michelle Wang"
     rating: 5
-    content: "The online sessions are just as effective as in-person. Stephen uses great visual tools to explain complex geometric concepts."
+    content: "The online sessions are incredibly effective. Stephen uses great visual tools to explain complex geometric concepts."
 ---

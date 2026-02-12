@@ -25,9 +25,9 @@ features:
       enable: true
       label: Learn More About Stephen
       link: "/features"
-  - title: Flexible Online and In-Person Sessions
+  - title: Flexible Online Sessions
     badge: CONVENIENCE
-    subtitle: "Choose the format that works best for you. I offer both virtual sessions via video call and in-person tutoring, with scheduling options to fit your busy academic life."
+    subtitle: "Learn from anywhere. I offer virtual sessions via video call with screen sharing and digital whiteboard tools, with scheduling options to fit your busy academic life."
     image: "/images/features/feature-6.png"
     button:
       enable: true

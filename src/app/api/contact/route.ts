@@ -21,8 +21,6 @@ const GOALS: Record<string, string> = {
 
 const SESSION_FORMATS: Record<string, string> = {
   online: "Online (Video Call)",
-  in_person: "In-Person",
-  either: "Either Works",
 };
 
 function getNotificationEmailHtml(data: {
